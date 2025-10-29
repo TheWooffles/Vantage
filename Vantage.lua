@@ -6,13 +6,13 @@ local Window = ReGui:TabsWindow({
 	Size = UDim2.fromOffset(300, 200)
 })
 
-local Combat = TabsWindow:CreateTab({
+local Combat = Window:CreateTab({
 	Name="Combat"
 })
-local Visuals = TabsWindow:CreateTab({
+local Visuals = Window:CreateTab({
 	Name="Visuals"
 })
-local Misc = TabsWindow:CreateTab({
+local Misc = Window:CreateTab({
 	Name="Misc"
 })
 
@@ -20,7 +20,7 @@ ReGui:Console({
     LineNumbers = true
 })
 
-local EditorTab = TabSelector:CreateTab({
+local EditorTab = Window:CreateTab({
 	Name = "Editor"
 }) --> Canvas
 
